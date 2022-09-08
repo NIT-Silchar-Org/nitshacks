@@ -16,10 +16,10 @@ const Hamburger_menu = ({showMenu}) => {
         <a href="#" className="hamburger_links">Contact</a>
         </div>
         {/* <img src={rec} alt="rec" className="absolute top-0 left-0 z-[-1]"/> */}
-        <div className="image_wrapper absolute top-3 left-2">
+        <div className="image_wrapper absolute -top-5 -left-10 lg:top-0 lg:-left-2">
           <Image src={top_left_svg} alt="top_left" className="min-h-[unset] h-[20vh] lg:h-[25vh]"/>
         </div>
-        <div className="image_wrapper absolute bottom-3 left-2 lg:bottom-3">
+        <div className="image_wrapper absolute -bottom-5 -left-10 lg:bottom-0 lg:-left-2">
           <Image src={bottom_left_svg} alt="bottom_left" className="min-h-[unset] h-[20vh] lg:h-[25vh]"/>
         </div>
         <div className="image_wrapper absolute top-0 right-1">

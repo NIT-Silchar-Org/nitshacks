@@ -13,7 +13,7 @@ const Ham_icon = ({setShowMenu,showMenu}) => {
   },[showMenu]);
   
   return (
-    <svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={()=>setShowMenu(!showMenu)}  className="fixed top-3 left-2 z-20 overflow-hidden">
+    <svg width="42" height="32" viewBox="0 0 42 32" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={()=>setShowMenu(!showMenu)}  className="fixed top-4 left-3 z-20 overflow-hidden">
         <path id="top" className="transition-all origin-left" d="M3 3H39.2019" stroke="url(#paint0_linear_1701_1626)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
         <path id="mid" className="transition-all origin-left" d="M3 15.9778H39.2019" stroke="url(#paint1_linear_1701_1626)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>
         <path id="bottom" className="transition-all origin-left" d="M3 28.9556H39.2019" stroke="url(#paint2_linear_1701_1626)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round"/>

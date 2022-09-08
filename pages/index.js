@@ -1,11 +1,11 @@
 import default_logo from "../public/Default.png";
-import variant_logo from "../public/Variant2.png";
-// import rec from "./assets/Rectangle 2.svg";
 import { useState,useEffect } from "react";
 import Ham_icon from "../components/elements/ham_icon";
 import Social_media_icons from "../components/elements/social_media_icons";
 import Hamburger_menu from "../components/elements/hamburger_menu";
 import Image from 'next/image';
+// importing secureConnectionStart
+import About from "../components/sections/about";
 
 // var logo_counter=false;
 function Hs() {
@@ -34,10 +34,7 @@ function Hs() {
         {/* social media icons */}
         <Social_media_icons/>
       </div>
-      <div className="sec2 h-[100vh] w-[130vw] bg-slate-400">
-
-      </div>
-
+      <About/>
     </div>
   );
 }
