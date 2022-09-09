@@ -26,6 +26,9 @@ module.exports = {
       },
       backgroundImage:{
         '404bg':"url('/assests/Error404/404bg.png')"
+      },
+      backgroundSize: {
+        'grow': ['auto 120%']
       }
     },
   },

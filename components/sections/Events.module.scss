@@ -1,0 +1,85 @@
+.body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  font-family: 'Roboto', sans-serif;
+  transition: 0.25s;
+  .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+
+    min-width: 600px;
+    max-width: 80vw;
+    width: calc(100% - 60px);
+
+    height: 80vh;
+
+    // @for $i from 1 through 4 {
+    //    @media screen and (max-width:798px - $i*80) {
+    //       min-width:600px - $i*80;
+    //       .option:nth-child(#{6-$i}) {
+    //          display:none;
+    //       }
+    //    }
+    // }
+
+    .option {
+      position: relative;
+      overflow: hidden;
+
+      min-width: 12%;
+      margin: 10px;
+      //border:0px solid --defaultColor;
+      background-size: auto 120%;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      cursor: pointer;
+
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+      &.active {
+        flex-grow: 10000;
+        transform: scale(1);
+
+        max-width: 80vw;
+        margin: 0px;
+        border-radius: 15px;
+
+        background-size: auto 100%;
+        background-repeat: no-repeat;
+        .shadow {
+          box-shadow: inset 0 -120px 120px -120px black,
+            inset 0 -120px 120px -100px black;
+        }
+        }
+        /*&:active {
+               transform:scale(0.9);
+            }*/
+      }
+      .not_active {
+        flex-grow: 1;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        .shadow {
+          bottom: -40px;
+          box-shadow: inset 0 -120px 0px -120px black,
+            inset 0 -120px 0px -100px black;
+        }
+      }
+      .shadow {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+
+        height: 120px;
+
+        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+      }
+  }
+}
