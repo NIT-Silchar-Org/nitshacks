@@ -1,0 +1,19 @@
+.animate {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border: 2px solid red;
+    animation: nits 0.3s ease-out infinite;
+}
+
+@keyframes nits {
+   0%{
+    top: 0%;
+    left: 0%;
+   }
+   100%{
+    top: 5%;
+    left: 5%;
+   }
+}
