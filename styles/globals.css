@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
-
-/* custom fonts */
-
-@layer base{
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+    overflow-x: hidden;
+  }
   @font-face {
     font-family: 'lemonMilk';
     src: url('/Fonts/LemonMilk.otf') ;
     font-weight:400;
     font-display:swap;
     font-style:normal;
-
-
   }
 }
+
+
 @layer base{
   @font-face {
     font-family: 'roadRage';
@@ -67,11 +65,24 @@
   }
 }
 
-/* default font */
-
-body{
-  font-family: 'Montserrat', sans-serif;
+.hamburger_links{
+  @apply text-[50px] my-7 font-black text-white cursor-pointer no-underline z-10 font-[lemonMilk] ;
 }
+.social_media_wrapper{
+@apply flex items-center justify-center relative border-4 border-[rgba(192,201,216,0.4)] p-3 rounded-full no-underline my-2 ;
+}
+.social_media_wrapper:hover{
+box-shadow: 0 -10px 10px rgba(70, 190, 212, 0.44),
+0 -10px 10px rgba(70, 190, 212, 0.44),
+0 10px 10px rgba(208, 60, 171, 0.55),
+0 10px 10px rgba(208, 60, 171, 0.55);
+}
+.hamburger{
+border-image-slice: 1;
+border-image-source: linear-gradient(to right,rgba(70, 190, 212, 0.44),rgba(208, 60, 171, 0.55));
+}
+
+
 /* Box sizing rules */
 *,
 *::before,
@@ -125,11 +136,11 @@ body {
 }
 
 /* Make images easier to work with */
-img,
+/* img,
 picture {
   max-width: 100%;
   display: block;
-}
+} */
 
 /* Inherit fonts for inputs and buttons */
 input,
@@ -230,4 +241,7 @@ header .animated {
   header h2 {
     font-size: 1.5em;
   }
+}
+html{
+  scroll-behavior: smooth;
 }

@@ -27,6 +27,9 @@
     //       }
     //    }
     // }
+    @media screen and (max-width: 700px) {
+      flex-direction: column;
+    }
 
     .option {
       position: relative;
@@ -40,6 +43,9 @@
       background-repeat: no-repeat;
 
       cursor: pointer;
+      @media screen and (max-width: 700px) {
+        min-height: 10%;
+      }
 
       transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
       &.active {
@@ -48,38 +54,46 @@
 
         max-width: 80vw;
         margin: 0px;
-        border-radius: 15px;
 
         background-size: auto 100%;
         background-repeat: no-repeat;
+
+        @media screen and (max-width: 700px) {
+          width: 100vw;
+          max-height: 80vh;
+          margin: 10px auto;
+        }
         .shadow {
           box-shadow: inset 0 -120px 120px -120px black,
             inset 0 -120px 120px -100px black;
         }
-        }
-        /*&:active {
+      }
+      /*&:active {
                transform:scale(0.9);
             }*/
-      }
-      .not_active {
-        flex-grow: 1;
-        background-repeat: no-repeat;
-        border-radius: 10px;
-        .shadow {
-          bottom: -40px;
-          box-shadow: inset 0 -120px 0px -120px black,
-            inset 0 -120px 0px -100px black;
+    }
+    .not_active {
+      flex-grow: 1;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 700px) {
+          width: 80vw;
+          margin: 10px auto;
         }
-      }
       .shadow {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-
-        height: 120px;
-
-        transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+        bottom: -40px;
+        box-shadow: inset 0 -120px 0px -120px black,
+          inset 0 -120px 0px -100px black;
       }
+    }
+    .shadow {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+
+      height: 120px;
+
+      transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+    }
   }
 }
