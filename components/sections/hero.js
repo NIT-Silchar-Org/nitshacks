@@ -43,7 +43,7 @@ const styleHack2 = {
   useEffect(()=>{
    const timer1 =  setTimeout(() => {
       setTop('5')
-      setLeftHack('22')
+      setLeftHack('10')
       setRightNit('22')
       setFont('glitch2')
     }, 200);
@@ -95,7 +95,7 @@ const styleHack2 = {
         <p style={stylesNits} className={` sm:text-[5rem] text-5xl`}>NITS</p>
         <p style={stylesNits2} className={` sm:text-[5rem] text-5xl`}>NITS</p>
       </div>
-      <div className="m-auto md:w-70 sm:w-60 w-44">
+      <div className="m-auto md:w-70 sm:w-60 w-36">
         <Image src={Group} alt="Group" />
       </div>
       
