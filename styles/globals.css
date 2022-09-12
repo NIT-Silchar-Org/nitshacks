@@ -61,6 +61,36 @@ picture {
   display: block;
 }
 
+/* font family mokoto font */
+
+
+@font-face {
+  font-family: "glitch1";
+  src: url("../public/MokotoFont/MokotoGlitch.ttf");
+}
+@font-face {
+  font-family: "glitch2";
+  src: url("../public/MokotoFont/MokotoGlitchMark.otf");
+}
+@font-face {
+  font-family: "glitch3";
+  src: url("../public/MokotoFont/MokotoGlitchMark2.otf");
+}
+
+@font-face {
+  font-family: "glitch4";
+  src: url("../public/Fonts/MokotoGlitchMark.otf");
+}
+
+@font-face {
+  font-family: "glitch5";
+  src: url("../public/MokotoFont/MokotoGlitchMarkOutline.otf");
+}
+@font-face {
+  font-family: "glitch6";
+  src: url("../public/MokotoFont/MoktoGlitchMarkoutline.ttf");
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,

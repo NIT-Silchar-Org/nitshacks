@@ -7,7 +7,7 @@ import instagram from '../../public/socialimg/instagram.png'
 import Image from 'next/image'
 const SocialMedia = () => {
   return (
-    <div className="flex flex-col absolute translate-x-[-50%] translate-y-[-50%] left-[5%] top-[75%]">
+    <div className="flex flex-col absolute translate-x-[-50%] translate-y-[-50%] md:left-[5%] sm:left-[7%] left-[9%] top-[72%]">
       <div>
         <Image src={facebook} />
       </div>
