@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Group from '../../public/img/Group-13.png'
 import styles from '../../styles/Hero.module.css'
-const Hero = () => {
+const Hero = ({showMenu}) => {
   const [font,setFont] = useState('glitch1');
   const [Top,setTop] = useState('0');
   const [rightNit,setRightNit] = useState('15');
@@ -87,25 +87,24 @@ const styleHack2 = {
     }
   },[change])
 
-  
   return (
     <div className="flex flex-col absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
 
-      <div className={`m-auto mb-5 ${styles.text_shadow}`}>
-        <p style={stylesNits} className={` sm:text-[5rem] text-5xl`}>NITS</p>
-        <p style={stylesNits2} className={` sm:text-[5rem] text-5xl`}>NITS</p>
+      <div className={`m-auto mb-5 ${styles.text_shadow} ${showMenu?'hidden':'block'}`}>
+        <p style={stylesNits} className={` sm:text-[6rem] text-5xl`}>NITS</p>
+        <p style={stylesNits2} className={` sm:text-[6rem] text-5xl`}>NITS</p>
       </div>
 
-      <div className="m-auto md:w-70 sm:w-60 w-36">
+      <div className={`m-auto md:w-70 sm:w-60 w-36 ${showMenu?'lg:translate-x-[20vw] transition-all lg:scale-75 scale-90':'transition-all'}` }>
         <Image src={Group} alt="Group" />
       </div>
       
-      <div className={`text-8xl ${styles.text_shadow}`}>
-        <div style={stylsHack} className={`text-center  sm:text-[5rem] text-5xl`}>
+      <div className={`text-8xl ${styles.text_shadow}  ${showMenu?'hidden':'block'}`}>
+        <div style={stylsHack} className={`text-center  sm:text-[6rem] text-5xl`}>
           <p>HACKS</p>
           <p>3.0</p>
         </div>
-        <div style={styleHack2} className={`text-center  sm:text-[5rem] text-5xl`}>
+        <div style={styleHack2} className={`text-center  sm:text-[6rem] text-5xl`}>
           <p>HACKS</p>
           <p>3.0</p>
         </div>
