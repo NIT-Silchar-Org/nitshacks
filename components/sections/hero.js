@@ -7,7 +7,7 @@ const Hero = () => {
   const [Top,setTop] = useState('0');
   const [rightNit,setRightNit] = useState('15');
   const [leftHack,setLeftHack] = useState('0');
-  const [change,setChange] = useState(true);
+  const [change,setChange] = useState(false);
 
 // NITS GLITCH STYLES //
 const stylesNits = {
@@ -95,6 +95,7 @@ const styleHack2 = {
         <p style={stylesNits} className={` sm:text-[5rem] text-5xl`}>NITS</p>
         <p style={stylesNits2} className={` sm:text-[5rem] text-5xl`}>NITS</p>
       </div>
+
       <div className="m-auto md:w-70 sm:w-60 w-36">
         <Image src={Group} alt="Group" />
       </div>
