@@ -8,6 +8,7 @@ const Hero = ({showMenu}) => {
   const [rightNit,setRightNit] = useState('15');
   const [leftHack,setLeftHack] = useState('0');
   const [change,setChange] = useState(false);
+  const [disp , setDisp] = useState('block')
 
 // NITS GLITCH STYLES //
 const stylesNits = {
@@ -38,6 +39,12 @@ const styleHack2 = {
 // HACK GLITCH STYLE ENDS //
 
 
+
+// useEffect(()=>{
+//   setTimeout(() => {
+//     setDisp('hidden');
+//   }, 800);
+// })
 
 // USE EFFECT FOR TIMEOUTS //
   useEffect(()=>{
@@ -90,16 +97,16 @@ const styleHack2 = {
   return (
     <div className="flex flex-col absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
 
-      <div className={`m-auto mb-5 ${styles.text_shadow} ${showMenu?'hidden':'block'}`}>
+      <div className={`m-auto mb-5 ${styles.text_shadow} ${showMenu?'translate-y-[-20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
         <p style={stylesNits} className={` sm:text-[6rem] text-5xl`}>NITS</p>
         <p style={stylesNits2} className={` sm:text-[6rem] text-5xl`}>NITS</p>
       </div>
 
-      <div className={`m-auto md:w-70 sm:w-60 w-36 ${showMenu?'lg:translate-x-[20vw] transition-all lg:scale-75 scale-90':'transition-all'}` }>
+      <div className={`m-auto md:w-70 sm:w-60 w-36 ${showMenu?'lg:translate-x-[20vw] transition-all duration-300':'transition-all'}` }>
         <Image src={Group} alt="Group" />
       </div>
       
-      <div className={`text-8xl ${styles.text_shadow}  ${showMenu?'hidden':'block'}`}>
+      <div className={`text-8xl ${styles.text_shadow}  ${showMenu?'translate-y-[20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
         <div style={stylsHack} className={`text-center  sm:text-[6rem] text-5xl`}>
           <p>HACKS</p>
           <p>3.0</p>
