@@ -20,7 +20,8 @@
     "react-dom": "18.2.0",
     "react-glitch-animation": "^1.0.0",
     "react-glitch-effect": "^3.1.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "vanta": "^0.5.22"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",
