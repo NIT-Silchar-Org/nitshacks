@@ -49,7 +49,7 @@ const styleHack2 = {
 // USE EFFECT FOR TIMEOUTS //
   useEffect(()=>{
    const timer1 =  setTimeout(() => {
-      setTop('5')
+      setTop('3')
       setLeftHack('10')
       setRightNit('22')
       setFont('glitch2')
@@ -64,16 +64,16 @@ const styleHack2 = {
     setFont('glitch4')
     setRightNit('5')
     setLeftHack('-10')
-    }, 400);
+    }, 370);
    const timer4 =  setTimeout(() => {
     setFont('glitch3')
-    }, 500);
+    }, 420);
     const timer6 =  setTimeout(() => {
       setTop('0');
       setRightNit('15');
       setLeftHack('0')
       setFont('glitch1')
-      }, 550);
+      }, 450);
 
   const timer = setTimeout(() => {
     setTop('0')
@@ -81,7 +81,7 @@ const styleHack2 = {
     setRightNit('15')
     setLeftHack('0')
     setChange(!change)
-  }, 1000);
+  }, 1300);
 
     return () => {
       clearTimeout(timer1)
@@ -98,8 +98,8 @@ const styleHack2 = {
     <div className="flex flex-col absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
 
       <div className={`m-auto mb-5 ${styles.text_shadow} ${showMenu?'translate-y-[-20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
-        <p style={stylesNits} className={` sm:text-[6rem] text-5xl`}>NITS</p>
-        <p style={stylesNits2} className={` sm:text-[6rem] text-5xl`}>NITS</p>
+        <p style={stylesNits} className={` sm:text-[5.5rem] text-5xl`}>NITS</p>
+        <p style={stylesNits2} className={` sm:text-[5.5rem] text-5xl`}>NITS</p>
       </div>
 
       <div className={`m-auto md:w-70 sm:w-60 w-36 ${showMenu?'lg:translate-x-[20vw] transition-all duration-300':'transition-all'}` }>
@@ -107,11 +107,11 @@ const styleHack2 = {
       </div>
       
       <div className={`text-8xl ${styles.text_shadow}  ${showMenu?'translate-y-[20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
-        <div style={stylsHack} className={`text-center  sm:text-[6rem] text-5xl`}>
+        <div style={stylsHack} className={`text-center  sm:text-[5.5rem] text-5xl`}>
           <p>HACKS</p>
           <p>3.0</p>
         </div>
-        <div style={styleHack2} className={`text-center  sm:text-[6rem] text-5xl`}>
+        <div style={styleHack2} className={`text-center  sm:text-[5.5rem] text-5xl`}>
           <p>HACKS</p>
           <p>3.0</p>
         </div>
