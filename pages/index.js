@@ -1,19 +1,15 @@
 // importing secureConnectionStart
-import About from "../components/sections/About";
-import AboutTecno from "../components/sections/AboutTecno";
-import Contact from "../components/sections/Contact";
-import Events from "../components/sections/Events"
 import Hero from "../components/sections/Hero"
+import Image from "next/image";
+
+import Main from "../components/sections/Main";
 
 // var logo_counter=false;
 function Hs() {
   return (
-    <div className="hs">
+    <div className="hs relative">
       <Hero />
-      <About />
-      <AboutTecno />
-      <Events />
-      <Contact />
+      <Main />
     </div>
   )
 }
