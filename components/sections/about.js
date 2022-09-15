@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../../styles/Home.module.css'
-import download from '../../public/download.svg'
+import download from '../../public/btn.svg'
 import Image from 'next/image'
 
 const About = () => {
@@ -10,12 +10,12 @@ const About = () => {
       id="about"
     >
       <div className="flex flex-col items-center justify-center pb-5 md:p-8">
-        <div className="font-babaPro">ABOUT</div>
-        <div className="font-babaPro">NITS HACKS 3.0</div>
+        <div className="font-babaPro py-2 border-b">ABOUT</div>
+        <div className="font-babaPro py-2 border-b">NITS HACKS 3.0</div>
       </div>
 
       <div
-        className={`w-4/5 md:w-3/5 rounded-3xl ${styles.box} text-base md:text-[1.4rem] p-8 font-medium md:my-20`}
+        className={`w-4/5 md:w-3/5 rounded-3xl text-base md:text-[1.6rem] uppercase p-8 font-medium md:my-4 text-center leading-9`}
       >
         Here comes one of the grandest module of Tecnoesis, back again to cater
         the technical hunger of the masses. NITS HACKS 3.0 is all about
@@ -25,8 +25,17 @@ const About = () => {
         compete and build together.
       </div>
 
-      <div className="w-56 h-20 relative cursor-pointer my-8">
-        <Image src={download} layout="fill" objectFit="cover" priority="true" />
+      <div className="w-[12rem] h-[4rem] relative cursor-pointer my-4">
+        <Image
+          src={download}
+          layout="fill"
+          objectFit="cover"
+          priority="true"
+          className="absolute top-0 left-0"
+        />
+        <div className="absolute top-[1.5rem] left-[6rem] z-2 font-babaPro text-sm -translate-x-1/2 -translate-y-1/2">
+          DOWNLOAD
+        </div>
       </div>
     </div>
   )
