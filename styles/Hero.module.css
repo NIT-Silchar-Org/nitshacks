@@ -1,0 +1,9 @@
+.text_shadow{
+    color: #fff;
+    font-family: glitch1;
+    text-shadow: 4px 4px 50px #4EDFFF,
+    -4px -4px 50px #D03CAB,
+    4px 4px 20px #4EDFFF,
+    -4px -4px 20px #D03CAB;
+}
+
