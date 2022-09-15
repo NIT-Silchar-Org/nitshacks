@@ -39,13 +39,6 @@ const styleHack2 = {
 // HACK GLITCH STYLE ENDS //
 
 
-
-// useEffect(()=>{
-//   setTimeout(() => {
-//     setDisp('hidden');
-//   }, 800);
-// })
-
 // USE EFFECT FOR TIMEOUTS //
   useEffect(()=>{
    const timer1 =  setTimeout(() => {
@@ -81,7 +74,7 @@ const styleHack2 = {
     setRightNit('15')
     setLeftHack('0')
     setChange(!change)
-  }, 1300);
+  }, Math.floor(Math.random() * (5000 - 1000) + 1000));
 
     return () => {
       clearTimeout(timer1)

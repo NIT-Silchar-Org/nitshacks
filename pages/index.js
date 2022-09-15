@@ -9,8 +9,8 @@ import About from '../components/sections/about'
 import Hero from '../components/sections/hero'
 import Head from 'next/head'
 import FOG from 'vanta/dist/vanta.fog.min'
+// import CLOUDS2 from 'vanta/dist/vanta.clouds.min.js'
 
-console.log(FOG)
 
 // var logo_counter=false;
 function Hs() {
