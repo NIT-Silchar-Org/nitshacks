@@ -12,7 +12,7 @@ library.add(faFacebook, faTwitter)
 
 const Contact = () => {
   return (
-    <div className="w-screen h-[50vh] bg-[#120118] overflow-y-hidden font-lemonMilk">
+    <div className="w-screen h-[60vh] bg-[#120118] overflow-y-hidden font-lemonMilk">
       <div className="relative absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-32 h-24">
         <Image src={hacks} layout="fill" objectFit="cover" priority="true" />
       </div>

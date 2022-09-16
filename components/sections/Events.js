@@ -1,13 +1,19 @@
 import React from 'react'
 import EventList from './EventList'
 
-const Events = () => {
+const Events = ({ showMenu }) => {
   return (
-    <div className="w-screen h-screen bg-black" id="events">
-      <div className="text-white text-2xl md:text-[2.6rem] font-babaPro text-center py-8">
+    <div className="w-screen h-screen bg-transparent">
+      <div
+        className={`${
+          showMenu ? 'opacity-0 duration-500' : ''
+        } text-white text-2xl md:text-[2.6rem] font-babaPro text-center py-8`}
+      >
         Events
       </div>
-      <EventList />
+      <div className={`${showMenu ? 'opacity-0 duration-500' : ''}`}>
+        <EventList />
+      </div>
     </div>
   )
 }

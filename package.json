@@ -22,7 +22,16 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
-    "sass": "^1.54.9"
+    "sass": "^1.54.9",
+    "@bijection/smoke": "^1.0.2",
+    "next": "^12.3.0",
+    "radium": "^0.26.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-glitch-animation": "^1.0.0",
+    "react-glitch-effect": "^3.1.0",
+    "react-icons": "^4.4.0",
+    "vanta": "^0.5.22"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.8",

@@ -15,8 +15,6 @@
     font-style:normal;
   }
 }
-
-
 @layer base{
   @font-face {
     font-family: 'roadRage';
@@ -64,7 +62,6 @@
 
   }
 }
-
 .hamburger_links{
   @apply text-[50px] my-7 font-black text-white cursor-pointer no-underline z-10 font-[lemonMilk] ;
 }
@@ -72,10 +69,7 @@
 @apply flex items-center justify-center relative border-4 border-[rgba(192,201,216,0.4)] p-3 rounded-full no-underline my-2 ;
 }
 .social_media_wrapper:hover{
-box-shadow: 0 -10px 10px rgba(70, 190, 212, 0.44),
-0 -10px 10px rgba(70, 190, 212, 0.44),
-0 10px 10px rgba(208, 60, 171, 0.55),
-0 10px 10px rgba(208, 60, 171, 0.55);
+box-shadow: -3px -3px 8px 4px #D03CAB, 3px 3px 8px 4px #4EDFFF;
 }
 .hamburger{
 border-image-slice: 1;
@@ -114,14 +108,23 @@ body {
   padding: 0;
   margin: 0;
   min-height: 100vh;
-  background: var(--offBlack);
   overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
+}
+
+.vanta-canvas{
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+    from(rgba(0,0,0,0)), to(rgba(0,0,0,0.6)));
+  /* opacity: 0.2 !important; */
 }
 
 /* Set core root defaults */
@@ -141,6 +144,36 @@ picture {
   max-width: 100%;
   display: block;
 } */
+
+/* font family mokoto font */
+
+
+@font-face {
+  font-family: "glitch1";
+  src: url("../public/MokotoFont/MokotoGlitch.ttf");
+}
+@font-face {
+  font-family: "glitch2";
+  src: url("../public/MokotoFont/MokotoGlitchMark.otf");
+}
+@font-face {
+  font-family: "glitch3";
+  src: url("../public/MokotoFont/MokotoGlitchMark2.otf");
+}
+
+@font-face {
+  font-family: "glitch4";
+  src: url("../public/Fonts/MokotoGlitchMark.otf");
+}
+
+@font-face {
+  font-family: "glitch5";
+  src: url("../public/MokotoFont/MokotoGlitchMarkOutline.otf");
+}
+@font-face {
+  font-family: "glitch6";
+  src: url("../public/MokotoFont/MoktoGlitchMarkoutline.ttf");
+}
 
 /* Inherit fonts for inputs and buttons */
 input,

@@ -1,4 +1,4 @@
-import About from './About'
+import About from './about'
 import AboutTecno from './AboutTecno'
 import Contact from './Contact'
 import Events from './Events'
@@ -15,7 +15,7 @@ import ball from '../../public/home/ball.svg'
 import Sponsers from './Sponsers'
 import { useEffect, useState } from 'react'
 
-const Main = () => {
+const Main = ({showMenu}) => {
   const [offsetY, setOffsetY] = useState(0)
   const handleScroll = () => {
     setOffsetY(window.pageYOffset-window.screenY)
@@ -28,86 +28,96 @@ const Main = () => {
     }
   }, [])
   return (
-    <div className="relative bg-black overflow-y-hidden overflow-x-hidden">
-      <div
-        className="relative absolute w-32 h-32 z-10 top-20"
-        style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
-      >
-        <Image src={eclipse} />
+    <div className="relative bg-sky-900/[0.6] overflow-y-hidden overflow-x-hidden">
+      <div className="absolute">
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[20vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
+        >
+          <Image src={eclipse} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-32 md:h-32 top-[40vh] left-10 bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+        >
+          <Image src={cube} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[50vh] left-[80vw] md:left-[85vw] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.7}px)` }}
+        >
+          <Image src={arrow} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[100vh] left-[80vw] md:left-[85vw] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+        >
+          <Image src={ring} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[160vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.6}px)` }}
+        >
+          <Image src={square} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[200vh] left-[80vw] md:left-[88vw] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
+        >
+          <Image src={triangle} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[190vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+        >
+          <Image src={cross} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 left-[85vw] top-[300vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
+        >
+          <Image src={arrow} className="rotate-180" />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[260vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.32}px)` }}
+        >
+          <Image src={arrow} className="rotate-90" />
+        </div>
+        <div
+          className="relative absolute w-20 z-4 h-20 md:w-40 md:h-40 -right-[87vw] top-[305vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.32}px)` }}
+        >
+          <Image src={ring2} />
+        </div>
+        <div
+          className="relative absolute w-20 h-20 md:w-40 md:h-40 -right-[90vw] top-[280vh] bg-transparent"
+          style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
+        >
+          <Image src={ball} />
+        </div>
       </div>
-      <div
-        className="relative absolute w-32 h-32 z-10 top-[30vh] left-10"
-        style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
-      >
-        <Image src={cube} />
+
+      <div className="overflow-y-hidden overflow-x-hidden">
+        <div className="relative top-0 bg-transparent" id="about">
+          <About showMenu={showMenu} />
+        </div>
+
+        <div className="relative top-0 bg-transparent" id="aboutTecno">
+          <AboutTecno showMenu={showMenu} />
+        </div>
+
+        <div className="relative top-0 bg-transparent" id="events">
+          <Events showMenu={showMenu} />
+        </div>
+
+        <div className="relative top-0 bg-transparent" id="sponsors">
+          <Sponsers showMenu={showMenu} />
+        </div>
+        <div className="relative top-40 md:top-0 bg-transparent" id="contact">
+          <Contact />
+        </div>
       </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 top-[50vh] left-[85vw]"
-        style={{ transform: `translateY(-${offsetY * 0.7}px)` }}
-      >
-        <Image src={arrow} />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 top-[70vh] left-[85vw]"
-        style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
-      >
-        <Image src={ring} />
-      </div>
-      <div className="absolute -top-20">
-        <About />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 top-[100vh]"
-        style={{ transform: `translateY(-${offsetY * 0.6}px)` }}
-      >
-        <Image src={square} />
-      </div>
-      <div className="relative -top-20">
-        <AboutTecno />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 top-[100vh] left-[88vw]"
-        style={{ transform: `translateY(-${offsetY * 0.6}px)` }}
-      >
-        <Image src={triangle} />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 top-[120vh]"
-        style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
-      >
-        <Image src={cross} />
-      </div>
-      <div className="relative -top-40">
-        <Events />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 left-[85vw] top-[200vh]"
-        style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
-      >
-        <Image src={arrow} className="rotate-180" />
-      </div>
-      <div className="relative -top-40">
-        <Sponsers />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 top-[170vh]"
-        style={{ transform: `translateY(-${offsetY * 0.32}px)` }}
-      >
-        <Image src={arrow} className="rotate-90" />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-15 -right-[87vw] top-[170vh]"
-        style={{ transform: `translateY(-${offsetY * 0.32}px)` }}
-      >
-        <Image src={ring2} />
-      </div>
-      <div
-        className="relative absolute w-40 h-40 z-10 -right-[89vw] top-[140vh]"
-        style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
-      >
-        <Image src={ball} />
-      </div>
-      <Contact />
     </div>
   )
 }

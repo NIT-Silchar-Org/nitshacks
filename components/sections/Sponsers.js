@@ -7,23 +7,40 @@ import replit from '../../public/home/Replit.png'
 import filecoin from '../../public/home/Filecoin.png'
 
 
-const Sponsers = () => {
+const Sponsers = ({showMenu}) => {
   return (
-    <div className="w-screen h-screen md:p-12 bg-black flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin">
-      <div className="flex flex-col items-center justify-center pb-5 md:p-8 my-4">
-        <div className="font-babaPro py-2 border-b">SPONSERS</div>
+    <div
+      className="w-screen h-screen md:p-12 bg-transparent flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin"
+      id="sponsors"
+    >
+      <div
+        className={`${
+          showMenu ? 'opacity-0 duration-500' : ''
+        } flex flex-col items-center justify-center pb-5 md:p-8 my-4`}
+      >
+        <div className="font-babaPro py-2 border-b">SPONSORSHIP</div>
       </div>
 
-      <div className="flex items-center h-[80vh]">
+      <div
+        className={`${
+          showMenu ? 'opacity-0 duration-500' : ''
+        } flex items-center h-[80vh]`}
+      >
         <div className="flex flex-col md:flex-row justify-between">
           <SponserCard imgSrc={devfolio} />
           <SponserCard imgSrc={polygon} />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between">
-        <SponserCard imgSrc={solana} />
-        <SponserCard imgSrc={replit} />
-        <SponserCard imgSrc={filecoin} />
+      <div
+        className={`${
+          showMenu ? 'opacity-0 duration-500' : ''
+        } flex items-center h-[80vh]`}
+      >
+        <div className="flex flex-col md:flex-row justify-between">
+          <SponserCard imgSrc={solana} />
+          <SponserCard imgSrc={replit} />
+          <SponserCard imgSrc={filecoin} />
+        </div>
       </div>
     </div>
   )
