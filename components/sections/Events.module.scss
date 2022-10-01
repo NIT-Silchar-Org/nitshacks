@@ -64,6 +64,35 @@
           max-height: 80vh;
           margin: 10px auto;
         }
+
+        .eventContent{
+          display: flex;
+          flex-direction: column;
+          font-family: "mokotoGlitch";
+          height: 100%;
+          padding: 1rem;
+
+          justify-content: space-evenly;
+          align-items: center;
+
+
+          .eventTitle{
+            font-size: 2.5rem;
+            text-align: center;
+            margin-top: 3rem;
+
+            @media screen and (max-width: 700px) {
+              font-size: 1.2rem;
+            }
+          }
+          
+          .eventViewButton{
+            margin-top: auto;
+            margin-bottom: 1rem;
+            position: relative;
+          }
+        }
+
         .shadow {
           box-shadow: inset 0 -120px 120px -120px black,
             inset 0 -120px 120px -100px black;

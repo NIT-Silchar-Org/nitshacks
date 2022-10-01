@@ -45,7 +45,7 @@ function Hs() {
         ref={myRef}
         className="hero_bg min-h-[100vh] w-[100vw] flex bg-slate-500 bg-[url('../public/tokyo.png')]"
       >
-        <Hamburger_menu showMenu={showMenu} />
+        <Hamburger_menu showMenu={showMenu} setShowMenu = {setShowMenu}/>
 
         <Ham_icon showMenu={showMenu} setShowMenu={setShowMenu} />
 

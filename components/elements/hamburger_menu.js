@@ -4,7 +4,7 @@ import top_left_svg from "../../public/Vector 14.svg";
 import bottom_left_svg from "../../public/Vector 15.svg";
 import right_svg from "../../public/Vector 11.svg";
 
-const Hamburger_menu = ({showMenu}) => {
+const Hamburger_menu = ({showMenu,setShowMenu}) => {
   // document.querySelector(".right_svg").style.bottom=null;
   // document.querySelector(".right_svg").style.minHeight=null;
   return (
@@ -20,19 +20,19 @@ const Hamburger_menu = ({showMenu}) => {
       }}
     >
       <div className="hamburger_menu flex flex-col ">
-        <a href="#about" className="hamburger_links font-light">
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#about" className="hamburger_links font-light">
           About HACKS
         </a>
-        <a href="#aboutTecno" className="hamburger_links font-light">
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#aboutTecno" className="hamburger_links font-light">
           About TECNO
         </a>
-        <a href="#events" className="hamburger_links font-light">
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#events" className="hamburger_links font-light">
           Events
         </a>
-        <a href="#sponsors" className="hamburger_links font-light">
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#sponsors" className="hamburger_links font-light">
           Sponsorship
         </a>
-        <a href="#contact" className="hamburger_links font-light">
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#contact" className="hamburger_links font-light">
           Contact
         </a>
       </div>
