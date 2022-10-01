@@ -31,67 +31,67 @@ const Main = ({showMenu}) => {
     <div className="relative bg-sky-900/[0.6] overflow-y-hidden overflow-x-hidden">
       <div className="absolute">
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[20vh] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[20vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.2}px)` }}
         >
           <Image src={eclipse} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-32 md:h-32 top-[40vh] left-10 bg-transparent"
+          className="relative w-20 h-20 md:w-32 md:h-32 top-[40vh] left-10 bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
         >
           <Image src={cube} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[50vh] left-[80vw] md:left-[85vw] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[50vh] left-[80vw] md:left-[85vw] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.7}px)` }}
         >
           <Image src={arrow} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[100vh] left-[80vw] md:left-[85vw] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[100vh] left-[80vw] md:left-[85vw] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
         >
           <Image src={ring} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[160vh] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[160vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.6}px)` }}
         >
           <Image src={square} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[200vh] left-[80vw] md:left-[88vw] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[200vh] left-[80vw] md:left-[88vw] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
         >
           <Image src={triangle} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[190vh] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[190vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
         >
           <Image src={cross} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 left-[85vw] top-[300vh] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 left-[85vw] top-[300vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.4}px)` }}
         >
           <Image src={arrow} className="rotate-180" />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 top-[260vh] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 top-[260vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.32}px)` }}
         >
           <Image src={arrow} className="rotate-90" />
         </div>
         <div
-          className="relative absolute w-20 z-4 h-20 md:w-40 md:h-40 -right-[87vw] top-[305vh] bg-transparent"
+          className="relative w-20 z-4 h-20 md:w-40 md:h-40 -right-[87vw] top-[305vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.32}px)` }}
         >
           <Image src={ring2} />
         </div>
         <div
-          className="relative absolute w-20 h-20 md:w-40 md:h-40 -right-[90vw] top-[280vh] bg-transparent"
+          className="relative w-20 h-20 md:w-40 md:h-40 -right-[90vw] top-[280vh] bg-transparent"
           style={{ transform: `translateY(-${offsetY * 0.3}px)` }}
         >
           <Image src={ball} />
@@ -99,22 +99,22 @@ const Main = ({showMenu}) => {
       </div>
 
       <div className="overflow-y-hidden overflow-x-hidden">
-        <div className="relative top-0 bg-transparent" id="about">
+        <div className="relative top-0 bg-transparent min-h-screen" id="about">
           <About showMenu={showMenu} />
         </div>
 
-        <div className="relative top-0 bg-transparent" id="aboutTecno">
+        <div className="relative top-0 bg-transparent min-h-screen" id="aboutTecno">
           <AboutTecno showMenu={showMenu} />
         </div>
 
-        <div className="relative top-0 bg-transparent" id="events">
+        <div className="relative top-0 bg-transparent min-h-screen" id="events">
           <Events showMenu={showMenu} />
         </div>
 
-        <div className="relative top-0 bg-transparent" id="sponsors">
+        <div className="relative top-0 bg-transparent min-h-screen" id="sponsors">
           <Sponsers showMenu={showMenu} />
         </div>
-        <div className="relative top-40 md:top-0 bg-transparent" id="contact">
+        <div className="relative top-40 md:top-0 bg-transparent min-h-screen" id="contact">
           <Contact />
         </div>
       </div>

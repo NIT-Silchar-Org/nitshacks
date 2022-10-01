@@ -6,7 +6,7 @@ const AboutTechno = ({showMenu}) => {
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
-        } flex flex-col items-center justify-center pb-5 md:p-8`}
+        } flex flex-col duration-500 items-center justify-center pb-5 md:p-8`}
       >
         <div className="font-babaPro py-2 border-b">ABOUT TECNO</div>
       </div>
@@ -14,7 +14,7 @@ const AboutTechno = ({showMenu}) => {
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
-        } w-4/5 md:w-3/5 rounded-3xl text-base md:text-[1.6rem] uppercase p-8 font-medium md:my-4 text-center leading-9`}
+        } max-w-3xl rounded-3xl text-base md:text-[1.6rem] uppercase p-8 font-medium md:my-4 text-center leading-9`}
       >
         Tecnoesis is the annual techno-managerial event of NIT Silchar,
         promising all tech geeks the ideal niche of fascinating events,

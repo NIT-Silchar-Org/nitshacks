@@ -12,7 +12,7 @@ const About = ({ showMenu }) => {
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
-        } flex flex-col items-center justify-center pb-5 md:p-8`}
+        } flex flex-col duration-500 items-center justify-center pb-5 md:p-8`}
       >
         <div className="font-babaPro py-2 border-b">ABOUT</div>
         <div className="font-babaPro py-2 border-b">NITS HACKS 5.0</div>
@@ -21,7 +21,7 @@ const About = ({ showMenu }) => {
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
-        } w-4/5 md:w-3/5 rounded-3xl text-base md:text-[1.6rem] uppercase p-8 font-medium md:my-4 text-center leading-9`}
+        } max-w-3xl rounded-3xl duration-500 text-base sm:text-[1.6rem] uppercase p-8 font-medium sm:my-4 text-center leading-9`}
       >
         Here comes one of the grandest module of Tecnoesis, back again to cater
         the technical hunger of the masses. NITS HACKS 5.0 is all about
@@ -35,13 +35,11 @@ const About = ({ showMenu }) => {
         className={`${
           showMenu
             ? 'opacity-0 duration-200'
-            : 'w-[12rem] h-[4rem] relative cursor-pointer my-4'
+            : 'duration-500 h-[4rem] relative cursor-pointer my-4'
         }`}
       >
         <Image
           src={download}
-          layout="fill"
-          objectFit="cover"
           priority="true"
           className="absolute top-0 left-0"
         />
