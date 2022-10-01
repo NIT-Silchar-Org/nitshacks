@@ -34,9 +34,9 @@ const Carousel = ({cardList = [],carouselSize}) => {
     <div style={style} className = "flex flex-row content-center overflow-hidden">
       <div ref={cardContainer} className="flex flex-row duration-300" id="carousalCardContainer">
         {
-          cardList.map((elem) => {
+          cardList.map((elem,idx) => {
             return(
-              <SponserCard imgSrc={elem.imgSrc}/>
+              <SponserCard imgSrc={elem.imgSrc} key={idx}/>
             )
           })
         }
