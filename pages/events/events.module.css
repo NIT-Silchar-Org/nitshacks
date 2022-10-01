@@ -24,7 +24,7 @@
 .title {
     font-family: "mokotoGlitchMark";
     color: white;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
 }
 
 .module {
@@ -58,7 +58,7 @@
     width: 100%;
     padding-left: 5.5rem;
     padding-right: 4rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
     color: white;
     font-size: 1rem;
     scrollbar-width: none;
@@ -246,5 +246,19 @@
       background-size: cover;
       background-image: url('../../public/events/coding_track.png');
     }
-
+    
+    @media only screen and (max-width: 640px) {
+        .event_logo{
+            display: none;
+        }
+        .headers{
+            justify-content: space-evenly;
+        }
+        .title{
+            text-align: center;
+        }
+        .details{
+            padding: 0 1rem;
+        }
+    }
 }
