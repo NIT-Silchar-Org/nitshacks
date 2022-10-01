@@ -20,19 +20,19 @@ const Hamburger_menu = ({showMenu}) => {
       }}
     >
       <div className="hamburger_menu flex flex-col ">
-        <a href="#about" className="hamburger_links">
+        <a href="#about" className="hamburger_links font-light">
           About HACKS
         </a>
-        <a href="#aboutTecno" className="hamburger_links">
+        <a href="#aboutTecno" className="hamburger_links font-light">
           About TECNO
         </a>
-        <a href="#events" className="hamburger_links">
+        <a href="#events" className="hamburger_links font-light">
           Events
         </a>
-        <a href="#sponsors" className="hamburger_links">
+        <a href="#sponsors" className="hamburger_links font-light">
           Sponsorship
         </a>
-        <a href="#contact" className="hamburger_links">
+        <a href="#contact" className="hamburger_links font-light">
           Contact
         </a>
       </div>
