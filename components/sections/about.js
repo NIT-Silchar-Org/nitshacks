@@ -37,6 +37,11 @@ const About = ({ showMenu }) => {
             ? 'opacity-0 duration-200'
             : 'duration-500 h-[4rem] relative cursor-pointer my-4'
         }`}
+        onClick={() => {
+          window.open(
+            'https://drive.google.com/file/d/1wSkWPiRuhry8HZ0rpCRyCgFac43JKjzh/view?usp=drivesdk',
+          )
+        }}
       >
         <Image
           src={download}
