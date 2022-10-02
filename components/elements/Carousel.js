@@ -1,10 +1,18 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import SponserCard from "./SponserCard";
 
 const Carousel = ({cardList = [],carouselSize}) => {
   const cardContainer = useRef();
+  const [carouselCardSize,setCarouselCardSize] = useState(360);
 
   useEffect(() => {
+
+    const currentCardStyle = getComputedStyle(cardContainer.current.firstChild);
+    
+    const cardWidth = cardContainer.current.firstChild.offsetWidth;
+    const cardMargin = parseInt(currentCardStyle.marginLeft.replace("px","")) + parseInt(currentCardStyle.marginRight.replace("px",""));
+
+    setCarouselCardSize(cardMargin+cardWidth);
 
     const carouselInterval = setInterval(()=>{
       handleLeftMovement(cardList,carouselSize);
@@ -15,7 +23,6 @@ const Carousel = ({cardList = [],carouselSize}) => {
     }
   },[carouselSize])
 
-  const carouselCardSize = 360;
 
   const style = {
     width: carouselCardSize*carouselSize,
@@ -31,7 +38,7 @@ const Carousel = ({cardList = [],carouselSize}) => {
 
 
   return (  
-    <div style={style} className = "flex flex-row content-center overflow-hidden">
+    <div style={style} className = "flex flex-row justify-start overflow-hidden">
       <div ref={cardContainer} className="flex flex-row duration-300" id="carousalCardContainer">
         {
           cardList.map((elem,idx) => {

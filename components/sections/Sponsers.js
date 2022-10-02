@@ -68,7 +68,7 @@ const Sponsers = ({showMenu}) => {
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
-        } flex items-center h-[80vh]`}
+        } flex items-center`}
       >
         {/* <div className="flex flex-col md:flex-row justify-between">
           <SponserCard imgSrc={devfolio} />
@@ -79,7 +79,7 @@ const Sponsers = ({showMenu}) => {
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
-        } flex items-center h-[80vh]`}
+        } flex items-center`}
       >
         {/* <div className="flex flex-col md:flex-row justify-between">
           <SponserCard imgSrc={solana} />
