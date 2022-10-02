@@ -135,6 +135,8 @@ const Contact = () => {
           CONTACT US:
           <br />
           <a href="mailto:nitshacks@tecnoesis.org">nitshacks@tecnoesis.org</a>
+          <br />
+          <br />
         </div>
         <div className={styles.reach}>
           HOW TO REACH
