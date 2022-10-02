@@ -2,7 +2,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import Map from './Map'
-import './Contact.module.css'
+import styles from './Contact.module.scss'
 library.add(faFacebook, faTwitter)
 
 // const Contact = () => {
@@ -70,74 +70,13 @@ const Contact = () => {
   // sincere apologies to whoever is reading this and has to
   // work on this, inline styles it is!!
   return (
-    <div
-      className="footer"
-      style={{
-        position: 'relative',
-        backgroundColor: '#120118',
-        height:
-          typeof window !== 'undefined' && window.innerWidth > 500
-            ? '50vh'
-            : '1000px',
-        width: '100vw',
-      }}
-    >
-      <div
-        className="bg"
-        style={{
-          position: 'absolute',
-          top: '0',
-          left: '0',
-          height: '100%',
-          width: '100%',
-          pointerEvents: 'none',
-        }}
-      >
-        <img
-          src="/hacks.svg"
-          style={{
-            position: 'absolute',
-            top: '50%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            height: '70%',
-          }}
-        ></img>
-        <img
-          src="/TopL.svg"
-          style={{
-            position: 'absolute',
-            top: '10px',
-            left: '10px',
-            width: '20%',
-          }}
-        ></img>
-        <img
-          src="/TopR.svg"
-          style={{
-            position: 'absolute',
-            top: '10px',
-            right: '10px',
-            width: '20%',
-          }}
-        ></img>
+    <div className={styles.footer}>
+      <div className={styles.bg}>
+        <img src="/hacks.svg" className={styles.hacks}></img>
+        <img src="/TopL.svg" className={styles.topL}></img>
+        <img src="/TopR.svg" className={styles.topR}></img>
       </div>
-      <div
-        className="footer-text"
-        style={{
-          position: 'absolute',
-          display: 'flex',
-          color: 'white',
-          justifyContent: 'space-between',
-          width: '100vw',
-          padding: '7vh 3vh 0.5vh 3vh',
-          boxSizing: 'border-box',
-          flexDirection:
-            typeof window !== 'undefined' && window.innerWidth > 500
-              ? 'row'
-              : 'column',
-        }}
-      >
+      <div className={styles.footerText}>
         <div className="left-content text-white">
           ©COPYRIGHT
           <br />
@@ -156,27 +95,8 @@ const Contact = () => {
               window.open('https://tecnoesis.org/')
             }}
           >
-            <img
-              src="/btn.svg"
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-              }}
-            ></img>
-            <span
-              className="text"
-              style={{
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                cursor: 'pointer',
-              }}
-            >
-              VISIT TECNOESIS
-            </span>
+            <img src="/btn.svg" className={styles.btn}></img>
+            <span className={styles.btnText}>VISIT TECNOESIS</span>
           </div>
           <br />
           <br />
@@ -214,22 +134,15 @@ const Contact = () => {
           <br />
           CONTACT US:
           <br />
-          <a href="mailto:nitshack@gmail.com">nitshack@gmail.com</a>
+          <a href="mailto:nitshacks@tecnoesis.org">nitshacks@tecnoesis.org</a>
         </div>
-        {typeof window !== 'undefined' && window.innerWidth < 500 && <br />}
-        <div
-          className="right-content text-white"
-          style={{
-            textAlign:
-              typeof window !== 'undefined' && window.innerWidth > 500
-                ? 'right'
-                : 'left',
-          }}
-        >
+        <div className={styles.reach}>
           HOW TO REACH
           <br />
           <br />
-          <Map />
+          <div className={styles.map}>
+            <Map />
+          </div>
         </div>
       </div>
     </div>
