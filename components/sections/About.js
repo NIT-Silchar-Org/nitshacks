@@ -3,8 +3,8 @@ import styles from '../../styles/Home.module.css'
 
 const About = () => {
   return (
-    <div className="w-screen h-screen p-12 bg-indigo-900 flex text-white items-center justify-center flex-col text-[2.6rem] font-thin">
-      <div className='flex flex-col items-center justify-center p-8'>
+    <div className="w-screen h-screen p-12 flex text-white items-center justify-center flex-col text-[2.6rem] font-thin">
+      <div className="flex flex-col items-center justify-center p-8">
         <div className="font-babaPro">ABOUT</div>
         <div className="font-babaPro">NITS HACKS 3.0</div>
       </div>

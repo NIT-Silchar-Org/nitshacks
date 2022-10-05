@@ -1,264 +1,263 @@
-.eventspage{
-    display: flex;
+.eventspage {
+  display: flex;
 }
 
 .left_section {
-    width: 60vw;
-    height: 100vh;
+  width: 60vw;
+  height: 100vh;
 }
 
 .headers {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    margin-top: 14rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 14rem;
 }
 
 .head {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .title {
-    font-family: "mokotoGlitchMark";
-    color: white;
-    font-size: 2.8rem;
+  font-family: 'mokotoGlitchMark';
+  color: white;
+  font-size: 2.8rem;
 }
 
 .module {
-    font-family: "mokotoGlitch";
-    color: white;
-    font-size: 1.1rem;
+  font-family: 'mokotoGlitch';
+  color: white;
+  font-size: 1.1rem;
 }
 
 .background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background: url('../../public/events/event-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: normal;
+}
+
+.event_logo {
+  /* margin-top: 15px; */
+  margin-bottom: 0.1rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+.details {
+  height: 40vh;
+  overflow-y: scroll;
+  width: 100%;
+  padding-left: 5.5rem;
+  padding-right: 4rem;
+  margin-top: 1rem;
+  color: white;
+  font-size: 1rem;
+  scrollbar-width: none;
+}
+
+.details::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnwrapper {
+  margin-top: 3rem;
+  margin-left: 5.5rem;
+}
+
+.registerbtn {
+  width: 9.625rem;
+  height: 2.5rem;
+  background-image: url('../../public/events/register-btn.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.right_poster {
+  width: 40vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+.ulist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style-type: disc;
+}
+
+.heading {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.subhead {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.rulesul {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  list-style-type: decimal;
+}
+
+.coding_rules {
+  margin-left: 1rem;
+  list-style-type: upper-alpha;
+}
+
+.right_section_coding {
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../public/events/coding_track.png');
+}
+
+.right_section_software {
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../public/events/software_track.png');
+}
+
+.right_section_uiux {
+  width: 40vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../../public/events/UIUX_track.png');
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    height: 100vh;
+  }
+
+  .left_section {
+    width: 100%;
+    padding: 1.4rem;
+  }
+  .background {
     position: absolute;
     left: 0;
     top: 0;
-    width: 60%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background: url('../../public/events/event-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     mix-blend-mode: normal;
-}
+  }
 
-.event_logo {
+  .headers {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 4rem;
+  }
+
+  .details {
+    height: 30vh;
+    overflow-y: scroll;
+    width: 90%;
+    margin: 0 auto;
+    padding: 3rem;
+    scrollbar-width: 0;
+    margin-top: 1rem;
+  }
+
+  .title {
+    font-family: 'mokotoGlitchMark';
+    color: white;
+    font-size: 2rem;
+  }
+
+  .module {
+    font-family: 'mokotoGlitch';
+    color: white;
+    font-size: 0.5rem;
+  }
+
+  .event_logo {
     /* margin-top: 15px; */
     margin-bottom: 0.1rem;
     margin-left: 3rem;
     margin-right: 2rem;
-}
+  }
 
-.details {
-    height: 40vh;
-    overflow-y: scroll;
-    width: 100%;
-    padding-left: 5.5rem;
-    padding-right: 4rem;
-    margin-top: 1rem;
-    color: white;
-    font-size: 1rem;
-    scrollbar-width: none;
-
-}
-
-.details::-webkit-scrollbar {
-    display: none;
-}
-
-.content{
-    display: flex;
-    flex-direction: column;
-}
-
-.btnwrapper {
+  .btnwrapper {
     margin-top: 3rem;
-    margin-left: 5.5rem;
-}
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
 
-.registerbtn {
-    width: 9.625rem;
-    height: 2.5rem;
-    background-image: url('../../public/events/register-btn.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.right_poster{
-    width: 40vw;
-    height: 100vh;
-    background-color: purple;
-}
-
-.ulist {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    list-style-type: disc;
-}
-
-.heading{
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.subhead{
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-.rulesul{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    list-style-type: decimal;
-}
-
-.coding_rules {
-    margin-left: 1rem;
-    list-style-type: upper-alpha;
-}
-
-.right_section_coding {
-    width: 40vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../../public/events/coding_track.png');
-}
-
-.right_section_software {
-    width: 40vw;
+  .mobile_poster_software {
+    display: grid;
+    height: 260px;
+    width: 216px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../../public/events/software_track.png');
-}
+  }
 
-.right_section_uiux {
-    width: 40vw;
+  .mobile_poster_uiux {
+    display: grid;
+    height: 260px;
+    width: 216px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url('../../public/events/UIUX_track.png');
-}
+  }
 
-@media only screen and (max-width: 1200px) {
-    .content{
-        height: 100vh;
-    }
+  .mobile_poster_coding {
+    display: grid;
+    height: 260px;
+    width: 216px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../public/events/coding_track.png');
+  }
 
-    .left_section {
-      width: 100%;
-      padding: 1.4rem;
-    }
-    .background {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url('../../public/events/event-bg.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        mix-blend-mode: normal;
-    }
-
-    .headers {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 4rem;
-    }
-  
-    .details {
-      height: 30vh;
-      overflow-y: scroll;
-      width: 90%;
-      margin: 0 auto;
-      padding: 3rem;
-      scrollbar-width: 0;
-      margin-top: 1rem;
-    }
-
-    .title {
-        font-family: "mokotoGlitchMark";
-        color: white;
-        font-size: 2rem;
-    }
-
-    .module {
-        font-family: "mokotoGlitch";
-        color: white;
-        font-size: 0.5rem;
-    }
-
+  @media only screen and (max-width: 640px) {
     .event_logo {
-      /* margin-top: 15px; */
-      margin-bottom: 0.1rem;
-      margin-left: 3rem;
-      margin-right: 2rem;
+      display: none;
     }
-
-    .btnwrapper {
-        margin-top: 3rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 3rem;
+    .headers {
+      justify-content: space-evenly;
     }
-
-    .mobile_poster_software {
-      display: grid;
-      height: 260px;
-      width: 216px;
-      border: 2px solid #ffffff;
-      border-radius: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('../../public/events/software_track.png');
+    .title {
+      text-align: center;
     }
-
-    .mobile_poster_uiux {
-      display: grid;
-      height: 260px;
-      width: 216px;
-      border: 2px solid #ffffff;
-      border-radius: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('../../public/events/UIUX_track.png');
+    .details {
+      padding: 0 1rem;
     }
-
-    .mobile_poster_coding {
-      display: grid;
-      height: 260px;
-      width: 216px;
-      border: 2px solid #ffffff;
-      border-radius: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-image: url('../../public/events/coding_track.png');
-    }
-    
-    @media only screen and (max-width: 640px) {
-        .event_logo{
-            display: none;
-        }
-        .headers{
-            justify-content: space-evenly;
-        }
-        .title{
-            text-align: center;
-        }
-        .details{
-            padding: 0 1rem;
-        }
-    }
+  }
 }

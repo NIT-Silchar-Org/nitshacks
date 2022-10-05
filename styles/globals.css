@@ -278,3 +278,7 @@ header .animated {
 html{
   scroll-behavior: smooth;
 }
+
+.backgroundcolor {
+  background: linear-gradient(180deg, #002641 34.06%, rgba(0, 19, 45, 0.81) 100%);
+}

@@ -6,44 +6,51 @@ import Link from 'next/link'
 
 const events = [
   {
-    title: "UI/UX TRACK",
-    link: "/events/2"
+    title: 'UI/UX TRACK',
+    link: '/events/2',
+    bg: 'eventList/uiuxtrack.png',
   },
   {
-    title: "SOFTWARE TRACK",
-    link: "/events/1"
+    title: 'SOFTWARE TRACK',
+    link: '/events/1',
+    bg: 'eventList/softwaretrack.png',
   },
   {
-    title: "CONDING TRACK",
-    link: "/events/3"
+    title: 'CODING TRACK',
+    link: '/events/3',
+    bg: 'eventList/codingtrack.png',
   },
 ]
 
 const EventList = () => {
   const [activeIndex, setActiveIndex] = useState(1)
+
   return (
     <div className={styles.body}>
       <div className={styles.options}>
         {events.map((event, index) => {
           return (
             <div
-              className={`${styles.option} ${
+              className={`${styles.option} "eventList" ${
                 activeIndex === index ? styles.active : styles.not_active
               }`}
+              // style={{
+              //   background:
+              //     'url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg)',
+              // }}
               style={{
-                background:
-                  'url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg)',
+                background: `url(${event.bg})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center 4%',
               }}
               onClick={() => setActiveIndex(index)}
               key={index}
             >
               <div className={styles.shadow}></div>
-              { index==activeIndex &&
+              {index == activeIndex && (
                 <div className={styles.eventContent}>
-
-                  <div className={styles.eventTitle}> {event.title}</div>
-                  <div className={styles.eventDetail}>
-                  </div>
+                  <div className={styles.eventDetail}></div>
                   <Link href={event.link}>
                     <a className={styles.eventViewButton}>
                       <Image
@@ -57,7 +64,7 @@ const EventList = () => {
                     </a>
                   </Link>
                 </div>
-              }
+              )}
             </div>
           )
         })}
