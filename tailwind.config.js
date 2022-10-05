@@ -31,7 +31,7 @@ module.exports = {
         lemonMilk:['lemonMilk'],
         roadRage:['roadRage'],
         mokotoGlitch:['mokotoGlitch'],
-        babaPro: ['babaPro'],
+        babaPro:['babaPro'],
         mokotoGlitchMark: ['mokotoGlitchMark']
       },
       boxShadow: {

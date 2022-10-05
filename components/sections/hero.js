@@ -90,23 +90,23 @@ const styleHack2 = {
   return (
     <div className="flex flex-col absolute translate-x-[-50%] translate-y-[-50%] top-[50%] left-[50%]">
 
-      <div className={`m-auto mb-5 ${styles.text_shadow} ${showMenu?'translate-y-[-20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
+      <div className={`m-auto ${styles.text_shadow} ${showMenu?'translate-y-[-20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
         <p style={stylesNits} className={` sm:text-[5.5rem] text-5xl`}>NITS</p>
         <p style={stylesNits2} className={` sm:text-[5.5rem] text-5xl`}>NITS</p>
       </div>
 
-      <div className={`m-auto md:w-70 sm:w-60 w-36 ${showMenu?'lg:translate-x-[20vw] transition-all duration-300':'transition-all'}` }>
+      <div className={`m-auto md:w-70 sm:w-60 w-36 ${showMenu?'lg:translate-x-[25vw] transition-all duration-300':'transition-all'}` }>
         <Image src={Group} alt="Group" />
       </div>
       
-      <div className={`text-8xl ${styles.text_shadow}  ${showMenu?'translate-y-[20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
+      <div className={`text-8xl mt-4 ${styles.text_shadow}  ${showMenu?'translate-y-[20vw] duration-500 opacity-0':'duration-500 block opacity-100'}`}>
         <div style={stylsHack} className={`text-center  sm:text-[5.5rem] text-5xl`}>
           <p>HACKS</p>
-          <p>3.0</p>
+          <p>5.0</p>
         </div>
         <div style={styleHack2} className={`text-center  sm:text-[5.5rem] text-5xl`}>
           <p>HACKS</p>
-          <p>3.0</p>
+          <p>5.0</p>
         </div>
       </div>
       

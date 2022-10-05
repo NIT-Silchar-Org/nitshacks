@@ -1,0 +1,93 @@
+div.footer {
+  background-color: #120118;
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+}
+
+div.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+}
+
+img.hacks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+}
+
+img.topL {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20%;
+}
+
+img.topR {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20%;
+}
+
+div.footerText {
+  position: absolute;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  width: 100%;
+  padding: 7vh 4vh 0.5vh 3vh;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+img.btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+span.btnText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+div.reach {
+  text-align: right;
+}
+
+div.map {
+  position: relative;
+  margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+  div.footer {
+    min-height: 100vh;
+  }
+
+  div.footerText {
+    flex-direction: column;
+  }
+
+  div.reach {
+    text-align: left;
+  }
+
+  div.map {
+    margin-top: auto;
+    height: 250px;
+    width: 330px;
+  }
+}
+
