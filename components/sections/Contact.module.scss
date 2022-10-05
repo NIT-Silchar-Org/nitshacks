@@ -2,7 +2,7 @@ div.footer {
   background-color: #120118;
   position: relative;
   width: 100%;
-  height: 60vh;
+  min-height: 60vh;
 }
 
 div.bg {
@@ -73,7 +73,7 @@ div.map {
 
 @media screen and (max-width: 500px) {
   div.footer {
-    height: 140vh;
+    min-height: 100vh;
   }
 
   div.footerText {
@@ -85,7 +85,9 @@ div.map {
   }
 
   div.map {
-    margin: auto
+    margin-top: auto;
+    height: 250px;
+    width: 330px;
   }
 }
 
