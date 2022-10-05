@@ -3,10 +3,11 @@ import DummyLogo from '../../public/dummylogo.png'
 import styles from '../events/events.module.css'
 import Hamburger_menu from '../../components/elements/hamburger_menu'
 import Ham_icon from '../../components/elements/ham_icon'
+import img from '../../public/events/coding_track.png'
 import { useState } from 'react'
 
 function Event() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(false)
   return (
     <div className={styles.eventspage}>
       <Hamburger_menu showMenu={showMenu} />
@@ -16,7 +17,7 @@ function Event() {
           <div className={styles.content}>
             <div className={styles.headers}>
               <div className={styles.event_logo}>
-                <Image src={DummyLogo}/>
+                <Image src={DummyLogo} />
               </div>
               <div className={styles.head}>
                 <div className={styles.title}>UI/UX Track</div>
@@ -56,9 +57,18 @@ function Event() {
         </div>
       </div>
       <div className={styles.right_section_uiux}>
+        <Image
+          src={img}
+          objectFit="cover"
+          style={{
+            width: '40vw',
+            height: '100vh',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
       </div>
     </div>
   )
 }
 
-export default Event;
+export default Event

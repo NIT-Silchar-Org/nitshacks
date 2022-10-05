@@ -3,6 +3,7 @@ import DummyLogo from '../../public/dummylogo.png'
 import styles from '../events/events.module.css'
 import Hamburger_menu from '../../components/elements/hamburger_menu'
 import Ham_icon from '../../components/elements/ham_icon'
+import img from '../../public/events/software_track.png'
 import { useEffect, useState } from 'react'
 
 function Event() {
@@ -75,7 +76,16 @@ function Event() {
           </div>
         </div>
       </div>
-      <div className={styles.right_section_software}></div>
+      <div className={styles.right_section_software}>
+        <Image
+          src={img}
+          style={{
+            width: '40vw',
+            height: '100vh',
+            backgroundRepeat: 'no-repeat',
+          }}
+        />
+      </div>
     </div>
   )
 }
