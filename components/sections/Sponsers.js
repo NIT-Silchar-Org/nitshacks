@@ -5,52 +5,56 @@ import polygon from '../../public/home/Polygon.png'
 import solana from '../../public/home/Solana.png'
 import replit from '../../public/home/Replit.png'
 import filecoin from '../../public/home/Filecoin.png'
+import taskade from '../../public/home/taskade.png'
 import Carousel from '../elements/Carousel'
 
-
-const Sponsers = ({showMenu}) => {
-
+const Sponsers = ({ showMenu }) => {
   const tierOneSponsors = [
-    {imgSrc: devfolio},
-    {imgSrc: polygon},
+    { imgSrc: devfolio, imghref: 'https://devfolio.co/' },
+    { imgSrc: polygon, imghref: 'https://polygon.technology/' },
   ]
 
   const tierTwoSponsors = [
-    {imgSrc: solana},
-    {imgSrc: replit},
-    {imgSrc: filecoin},
+    { imgSrc: solana, imghref: 'https://solana.com/' },
+    { imgSrc: replit, imghref: 'https://replit.com/' },
+    { imgSrc: filecoin, imghref: 'https://filecoin.io/' },
   ]
-  
-  const [carouselSizes,setCarouselSizes] = useState ({
+  const tierThreeSponsors = [
+    { imgSrc: taskade, imghref: 'https://www.taskade.com/' },
+  ]
+  const [carouselSizes, setCarouselSizes] = useState({
     tierOneSize: tierOneSponsors.length,
     tierTwoSize: tierTwoSponsors.length,
+    tierThreeSize: tierThreeSponsors.length,
   })
 
   useEffect(() => {
-    if(screen.width<640){
+    if (screen.width < 640) {
       setCarouselSizes((prev) => {
-        const newSizes = {...prev}
-        newSizes.tierOneSize = Math.min(newSizes.tierOneSize,1);
-        newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize,1);
-        return newSizes;
+        const newSizes = { ...prev }
+        newSizes.tierOneSize = Math.min(newSizes.tierOneSize, 1)
+        newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize, 1)
+        newSizes.tierThreeSize = Math.min(newSizes.tierThreeSize, 1)
+        return newSizes
       })
-    }else if(screen.width<1200){
+    } else if (screen.width < 1200) {
       setCarouselSizes((prev) => {
-        const newSizes = {...prev}
-        newSizes.tierOneSize = Math.min(newSizes.tierOneSize,2);
-        newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize,2);
-        return newSizes;
+        const newSizes = { ...prev }
+        newSizes.tierOneSize = Math.min(newSizes.tierOneSize, 2)
+        newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize, 2)
+        newSizes.tierThreeSize = Math.min(newSizes.tierThreeSize, 2)
+        return newSizes
       })
-    }else{
+    } else {
       setCarouselSizes((prev) => {
-        const newSizes = {...prev}
-        newSizes.tierOneSize = Math.min(newSizes.tierOneSize,3);
-        newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize,3);
-        return newSizes;
+        const newSizes = { ...prev }
+        newSizes.tierOneSize = Math.min(newSizes.tierOneSize, 3)
+        newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize, 3)
+        newSizes.tierThreeSize = Math.min(newSizes.tierThreeSize, 3)
+        return newSizes
       })
     }
-
-  },[])
+  }, [])
 
   return (
     <div
@@ -74,7 +78,10 @@ const Sponsers = ({showMenu}) => {
           <SponserCard imgSrc={devfolio} />
           <SponserCard imgSrc={polygon} />
         </div> */}
-        <Carousel cardList={tierOneSponsors} carouselSize = {carouselSizes.tierOneSize} />
+        <Carousel
+          cardList={tierOneSponsors}
+          carouselSize={carouselSizes.tierOneSize}
+        />
       </div>
       <div
         className={`${
@@ -86,7 +93,26 @@ const Sponsers = ({showMenu}) => {
           <SponserCard imgSrc={replit} />
           <SponserCard imgSrc={filecoin} />
         </div> */}
-        <Carousel cardList={tierTwoSponsors} carouselSize = {carouselSizes.tierTwoSize} />
+        <Carousel
+          cardList={tierTwoSponsors}
+          carouselSize={carouselSizes.tierTwoSize}
+        />
+      </div>
+
+      <div
+        className={`${
+          showMenu ? 'opacity-0 duration-500' : ''
+        } flex items-center`}
+      >
+        {/* <div className="flex flex-col md:flex-row justify-between">
+          <SponserCard imgSrc={solana} />
+          <SponserCard imgSrc={replit} />
+          <SponserCard imgSrc={filecoin} />
+        </div> */}
+        <Carousel
+          cardList={tierThreeSponsors}
+          carouselSize={carouselSizes.tierThreeSize}
+        />
       </div>
     </div>
   )
