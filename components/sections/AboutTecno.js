@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutTechno = ({showMenu}) => {
   return (
-    <div className="w-screen h-screen md:p-12 bg-transparent flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin">
+    <div className="w-screen min-h-screen md:p-12 bg-transparent flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin">
       <div
         className={`${
           showMenu ? 'opacity-0 duration-500' : ''
