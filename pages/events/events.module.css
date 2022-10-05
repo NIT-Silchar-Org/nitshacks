@@ -127,6 +127,9 @@
 }
 
 .right_section_coding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,6 +137,9 @@
 }
 
 .right_section_software {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -141,6 +147,9 @@
 }
 
 .right_section_uiux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 40vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,6 +260,17 @@
   }
 
   @media only screen and (max-width: 640px) {
+    .right_section_software {
+      display: none;
+    }
+
+    .right_section_uiux {
+      display: none;
+    }
+    .right_section_coding {
+      display: none;
+    }
+
     .event_logo {
       display: none;
     }
