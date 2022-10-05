@@ -63,7 +63,7 @@
   }
 }
 .hamburger_links{
-  @apply  text-[25px] md:text-[35px] my-7 font-black text-white cursor-pointer no-underline z-10 font-[lemonMilk] ;
+  @apply  text-[35px] md:text-[45px] my-7 font-black text-white cursor-pointer no-underline z-10 font-[lemonMilk] ;
 }
 .social_media_wrapper{
 @apply flex items-center justify-center relative border-4 border-[rgba(192,201,216,0.4)] p-3 rounded-full no-underline my-2 ;

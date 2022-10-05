@@ -114,7 +114,7 @@ const Main = ({showMenu}) => {
         <div className="relative top-0 bg-transparent min-h-screen" id="sponsors">
           <Sponsers showMenu={showMenu} />
         </div>
-        <div className="relative top-40 md:top-0 bg-transparent" id="contact">
+        <div className="relative top-0 md:top-0 bg-transparent min-h-screen sm:min-h-0" id="contact">
           <Contact />
         </div>
       </div>
