@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-      - prod
-      - dev
 jobs:
   build-site:
     runs-on: ubuntu-latest
