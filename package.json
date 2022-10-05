@@ -20,7 +20,6 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-google-maps/api": "^2.12.2",
     "next": "^12.3.0",
-    "radium": "^0.26.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-glitch-animation": "^1.0.0",
