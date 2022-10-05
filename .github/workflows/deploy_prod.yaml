@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - prod
+      - dev
 jobs:
   build-site:
     runs-on: ubuntu-latest
