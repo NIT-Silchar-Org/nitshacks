@@ -13,17 +13,12 @@
     "test-all": "npm run check-format && npm run check-lint && npm run build"
   },
   "dependencies": {
+    "@bijection/smoke": "^1.0.2",
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@react-google-maps/api": "^2.12.2",
-    "next": "12.2.5",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "^4.4.0",
-    "sass": "^1.54.9",
-    "@bijection/smoke": "^1.0.2",
     "next": "^12.3.0",
     "radium": "^0.26.2",
     "react": "18.2.0",
@@ -31,6 +26,7 @@
     "react-glitch-animation": "^1.0.0",
     "react-glitch-effect": "^3.1.0",
     "react-icons": "^4.4.0",
+    "sass": "^1.55.0",
     "vanta": "^0.5.22"
   },
   "devDependencies": {

@@ -11,15 +11,15 @@ const Hamburger_menu = ({showMenu,setShowMenu}) => {
     <div
       className={
         showMenu
-          ? 'hamburger lg:w-[55vw] w-[100vw] min-h-[100vh] flex items-center justify-center fixed top-0 left-0 z-10 border-2 border-[#FF00BF] transition-all'
-          : 'hamburger lg:w-[45vw] w-[100vw] min-h-[100vh] flex items-center justify-center fixed top-0 left-[-100vw] lg:left-[-45vw] z-10 border-2 border-[#FF00BF] transition-all'
+          ? 'hamburger lg:w-[55vw] w-[100vw] min-h-[100vh] flex justify-center fixed top-0 left-0 z-10 border-2 border-[#FF00BF] transition-all'
+          : 'hamburger lg:w-[45vw] w-[100vw] min-h-[100vh] flex justify-center fixed top-0 left-[-100vw] lg:left-[-45vw] z-10 border-2 border-[#FF00BF] transition-all'
       }
       style={{
         background:
           'linear-gradient(to bottom,rgba(70, 190, 212, 0.44),rgba(177, 114, 218, 0.74),rgba(208, 60, 171, 0.55))',
       }}
     >
-      <div className="hamburger_menu flex flex-col ">
+      <div className="hamburger_menu flex flex-col  items-center">
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#about" className="hamburger_links font-light">
           About HACKS
         </a>
