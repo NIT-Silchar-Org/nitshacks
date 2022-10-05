@@ -16,6 +16,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "16"
+      - name: Set npm config set legacy-peer-deps true
+        run: npm config set legacy-peer-deps true
       - name: Installing dependencies
         run: npm install
       - name: Building project
