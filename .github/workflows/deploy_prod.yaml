@@ -1,8 +1,10 @@
-name: deploy-prod
+name: deploy-dev
 on:
   workflow_dispatch:
   push:
     branches:
+      - main
+      - prod
       - dev
 jobs:
   build-site:
