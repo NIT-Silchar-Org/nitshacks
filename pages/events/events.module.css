@@ -86,10 +86,14 @@
   background-repeat: no-repeat;
 }
 
-.right_poster {
-  width: 40vw;
-  height: 100vh;
-  background-color: purple;
+.registerbtn:disabled{
+    opacity: 0.7;
+}
+
+.right_poster{
+    width: 40vw;
+    height: 100vh;
+    background-color: purple;
 }
 
 .ulist {

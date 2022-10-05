@@ -62,7 +62,7 @@ const Sponsers = ({showMenu}) => {
           showMenu ? 'opacity-0 duration-500' : ''
         } flex flex-col items-center justify-center pb-5 md:p-8 my-4`}
       >
-        <div className="font-babaPro py-2 border-b">SPONSORSHIP</div>
+        <div className="font-babaPro py-2 border-b">SPONSORS</div>
       </div>
 
       <div

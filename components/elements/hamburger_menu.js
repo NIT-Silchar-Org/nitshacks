@@ -23,14 +23,14 @@ const Hamburger_menu = ({showMenu,setShowMenu}) => {
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#about" className="hamburger_links font-light">
           About HACKS
         </a>
-        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#aboutTecno" className="hamburger_links font-light">
-          About TECNO
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#aboutIIC" className="hamburger_links font-light">
+          About IIC
         </a>
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#events" className="hamburger_links font-light">
           Events
         </a>
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#sponsors" className="hamburger_links font-light">
-          Sponsorship
+          Sponsors
         </a>
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#contact" className="hamburger_links font-light">
           Contact

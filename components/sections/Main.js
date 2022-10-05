@@ -1,5 +1,5 @@
 import About from './about'
-import AboutTecno from './AboutTecno'
+import AboutIIC from './AboutIIC'
 import Contact from './Contact'
 import Events from './Events'
 import Image from 'next/image'
@@ -103,8 +103,8 @@ const Main = ({showMenu}) => {
           <About showMenu={showMenu} />
         </div>
 
-        <div className="relative top-0 bg-transparent min-h-screen" id="aboutTecno">
-          <AboutTecno showMenu={showMenu} />
+        <div className="relative top-0 bg-transparent min-h-screen" id="aboutIIC">
+          <AboutIIC showMenu={showMenu} />
         </div>
 
         <div className="relative top-0 bg-transparent min-h-screen" id="events">

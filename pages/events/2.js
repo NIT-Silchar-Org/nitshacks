@@ -26,54 +26,31 @@ function Event() {
             <div className={styles.details}>
               <br />
               <p className={styles.subhead}>
-              The newly added UI/UX track of NITSHacks is here to satisfy your hunger of making great 
-              designs and elevating user experience to the next level. This path is introduced to familiarize 
-              people with the fascinating world of UI/UX designing and show people the importance of this art 
-              in the industry. Participants will be given specific themes on which they will make website/app designs. 
-              Let your creative juices flow and make extraordinary designs to pave your way towards victory and win exciting
-              cash prizes. The designs will be judged on their creativity, practicality and color combination/ moodboarding.
-              This will be an offline event and students above the age of 16 are allowed to compete for these amazing prizes 
-              and to have a good time. Participants are allowed to use whichever software they prefer to craft their designs. 
-              Offline participation will be highly encouraged and appreciated rather than online
+              The newly added UI/UX track of NITSHacks is here to satisfy your hunger of making great designs and elevating user experience to the next level. This path is introduced to familiarize people with the fascinating world of UI/UX designing and show people the importance of this art in the industry.Let your creative juices flow and make extraordinary designs to pave your way towards victory and win exciting prizes.
               </p>
               <br />
-              <ul className={styles.ulist}>
-                <li>
-                  <div className={styles.subhead}>Round 1: Ideation</div>
-                  Once you register for the challenge you would get your problem statement through email or facebook post.
-                  You have to solve this design problem by conducting user research, creating user journeys, user personas.
-                  You can use the 5 principles of design thinking - empathize, define, ideate, prototype and test.
-                  At the end submit your solution in a Google Form link that will be provided to you
-                </li>
-                <li>
-                  <div className={styles.subhead}>Round 2: Designing on Figma ( Including wireframing )</div>
-                    The selected participants will have to work on the actual designing of the problem statement 
-                    including wireframing (important).
-                </li>
-                <li>
-                  <div className={styles.subhead}>Round 3: Prototyping and improving interactions ( Final Round )</div>
-                    This will be the final round where after improving your interactions , prototypes , 
-                    animations you will have to present your design and ideas in front of juries.
-                </li>
-                <li>
-                  <div className={styles.subhead}>Rules and Guidelines</div>
-                    <ul className={styles.rulesul}>
-                      <li>Only individual participation is allowed</li>
-                      <li>The design should be Figma and each participant must have a Figma account.</li>
-                      <li>The hackathon will be in a hybrid model</li>
-                      <li>The design should be real and new</li>
-                      <li>Existing website/application design cloning will be eliminated at any stage.</li>
-                    </ul>
-                  </li>
+              <b>
+                <p>
+                The event will be organized in a single phase and participants will be judged on 3 criteria: Ideation, Design and Prototyping. Multiple problem statements will be available for the participant. Each participant can select only one problem statement. Submission of multiple problem statements will not be considered.
+                </p>
+              </b>
+              <br />
+              <div >Rules and Guidelines</div>
+              <ul className={styles.rulesul}>
+                <li>Only individual participation is allowed</li>
+                <li>The design should be Figma and each participant must have a Figma account.</li>
+                <li>The hackathon will be in a hybrid model</li>
+                <li>The design should be real and new</li>
+                <li>Existing website/application design cloning will be eliminated at any stage.</li>
               </ul>
+              <br />
             </div>
             <div className={styles.btnwrapper}>
-              <button 
-                className={styles.registerbtn}
-                onClick={()=>{
-                  window.location.href = ''
-                }}
-              ></button>
+              {/* <a target="_blank" href='https://forms.gle/vS1scytr5gqh61Up7'> */}
+                <button disabled
+                  className={styles.registerbtn}
+                ></button>
+              {/* </a> */}
             </div>
           </div>
         </div>

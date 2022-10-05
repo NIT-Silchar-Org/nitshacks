@@ -26,17 +26,7 @@ function Event() {
             <div className={styles.details}>
               <br />
               <p className={styles.subhead}>
-              NITS HACKS 5.0 is back in collaboration with GDSC NIT Silchar and will take you to an
-              inter-college coding competition where you may compete against the top coders in India, 
-              polish your problem-solving skills, and have an unforgettable experience. Get ready to tackle
-               some challenging problems using your grey matter!
-              </p>
-              <br />
-              <p className={styles.subhead}>
-                The coding competition is open to all undergraduate programmers in India and will be split into
-                preliminary and final rounds according to ICPC guidelines. Prelims will be held in online mode on 
-                02/10/2022(Tentative). The top 20 preliminaries teams out of which 5 spots are reserved for the NITS Team
-                (excluding the top 15) will participate in the final round which is an on-site competition.
+              The coding competition is open to all undergraduate programmers in India and will be split into preliminary and final rounds according to ICPC guidelines. Prelims will be held in online mode on 06/10/2022(Tentative). The top 20 preliminaries teams out of which 5 spots are reserved for the NITS Team(excluding the top 15) will participate in the final round which is an on-site competition.
               </p>
               <br />
               <div className={styles.subhead}>Rules and Guidelines</div>
@@ -50,21 +40,21 @@ function Event() {
                 <li>
                   For the onsite teams who qualify for finals:
                   <ul className={styles.coding_rules}>
-                    <li>Travelling expenses, accommodation, local hospitality, and basic facilities(internet, electricity, etc)
-                    will be provided by the institute.
+                    <li>Travelling expenses, accommodation will be reimbursed to some extent by the institute. 
                     </li>
                     <li>A team can use no more than one laptop during the contests.</li>
                   </ul>
                 </li>
               </ul>
+              <br />
             </div>
             <div className={styles.btnwrapper}>
-              <button 
-                className={styles.registerbtn}
-                onClick={()=>{
-                  window.location.href = ''
-                }}
-              ></button>
+              <a target="_blank" href='https://forms.gle/kdJuqzaa6fdpQG7r7'>
+                <button 
+                  className={styles.registerbtn}
+                >
+                </button>
+              </a>
             </div>
           </div>
         </div>

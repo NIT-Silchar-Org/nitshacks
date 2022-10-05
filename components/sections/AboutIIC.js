@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AboutTechno = ({showMenu}) => {
+const AboutIIC = ({showMenu}) => {
   return (
     <div className="w-screen min-h-screen md:p-12 bg-transparent flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin">
       <div
@@ -22,4 +22,4 @@ const AboutTechno = ({showMenu}) => {
   )
 }
 
-export default AboutTechno
+export default AboutIIC
