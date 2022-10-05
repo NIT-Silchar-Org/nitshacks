@@ -54,7 +54,7 @@ const Sponsers = ({showMenu}) => {
 
   return (
     <div
-      className="w-screen h-screen md:p-12 bg-transparent flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin"
+      className="w-screen min-h-screen md:p-12 bg-transparent flex text-white items-center justify-center flex-col text-2xl md:text-[2.6rem] font-thin"
       id="sponsors"
     >
       <div
