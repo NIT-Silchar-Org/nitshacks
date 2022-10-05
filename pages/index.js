@@ -36,7 +36,7 @@ function Hs() {
   }, [vantaEffect])
 
   return (
-    <div className="hs bg-sky-900">
+    <div className="hs backgroundcolor">
       <Head>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         <title>NITS HACKS</title>
@@ -45,7 +45,7 @@ function Hs() {
         ref={myRef}
         className="hero_bg min-h-[100vh] w-[100vw] flex bg-slate-500 bg-[url('../public/tokyo.png')]"
       >
-        <Hamburger_menu showMenu={showMenu} setShowMenu = {setShowMenu}/>
+        <Hamburger_menu showMenu={showMenu} setShowMenu={setShowMenu} />
 
         <Ham_icon showMenu={showMenu} setShowMenu={setShowMenu} />
 
