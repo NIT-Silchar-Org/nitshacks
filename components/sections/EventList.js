@@ -43,6 +43,7 @@ const EventList = () => {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center 4%',
+                borderRadius: "7px",
               }}
               onClick={() => setActiveIndex(index)}
               key={index}
