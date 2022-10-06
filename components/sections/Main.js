@@ -15,10 +15,10 @@ import ball from '../../public/home/ball.svg'
 import Sponsers from './Sponsers'
 import { useEffect, useState } from 'react'
 
-const Main = ({showMenu}) => {
+const Main = ({ showMenu }) => {
   const [offsetY, setOffsetY] = useState(0)
   const handleScroll = () => {
-    setOffsetY(window.pageYOffset-window.screenY)
+    setOffsetY(window.pageYOffset - window.screenY)
   }
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
@@ -28,7 +28,7 @@ const Main = ({showMenu}) => {
     }
   }, [])
   return (
-    <div className="relative bg-sky-900/[0.6] overflow-y-hidden overflow-x-hidden">
+    <div className="relative overflow-y-hidden overflow-x-hidden">
       <div className="absolute">
         <div
           className="relative w-20 h-20 md:w-40 md:h-40 top-[20vh] bg-transparent"
@@ -103,7 +103,10 @@ const Main = ({showMenu}) => {
           <About showMenu={showMenu} />
         </div>
 
-        <div className="relative top-0 bg-transparent min-h-screen" id="aboutIIC">
+        <div
+          className="relative top-0 bg-transparent min-h-screen"
+          id="aboutIIC"
+        >
           <AboutIIC showMenu={showMenu} />
         </div>
 
@@ -111,10 +114,16 @@ const Main = ({showMenu}) => {
           <Events showMenu={showMenu} />
         </div>
 
-        <div className="relative top-0 bg-transparent min-h-screen" id="sponsors">
+        <div
+          className="relative top-0 bg-transparent min-h-screen"
+          id="sponsors"
+        >
           <Sponsers showMenu={showMenu} />
         </div>
-        <div className="relative top-0 md:top-0 bg-transparent min-h-screen sm:min-h-0" id="contact">
+        <div
+          className="relative top-0 md:top-0 bg-transparent min-h-screen sm:min-h-0"
+          id="contact"
+        >
           <Contact />
         </div>
       </div>
