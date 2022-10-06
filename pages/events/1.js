@@ -72,7 +72,7 @@ function Event() {
               ></button> */}
               <div
                 className="apply-button"
-                data-hackathon-slug="YOUR-HACKATHON-SLUG"
+                data-hackathon-slug="nitshacks"
                 data-button-theme="light"
                 style={{ height: '44px', width: '312px' }}
               ></div>
