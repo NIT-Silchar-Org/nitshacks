@@ -28,7 +28,7 @@ const Main = ({showMenu}) => {
     }
   }, [])
   return (
-    <div className="relative bg-sky-900/[0.6] overflow-y-hidden overflow-x-hidden">
+    <div className="relative overflow-y-hidden overflow-x-hidden">
       <div className="absolute">
         <div
           className="relative w-20 h-20 md:w-40 md:h-40 top-[20vh] bg-transparent"
