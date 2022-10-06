@@ -3,6 +3,7 @@ import DummyLogo from '../../public/dummylogo.png'
 import styles from '../events/events.module.css'
 import Hamburger_menu from '../../components/elements/hamburger_menu'
 import Ham_icon from '../../components/elements/ham_icon'
+import Head from 'next/head'
 import img from '../../public/events/UIUX_track.png'
 import { useState } from 'react'
 
@@ -10,6 +11,9 @@ function Event() {
   const [showMenu, setShowMenu] = useState(false)
   return (
     <div className={styles.eventspage}>
+      <Head>
+        <title>UI/UX Track</title>
+      </Head>
       <Hamburger_menu showMenu={showMenu} />
       <Ham_icon showMenu={showMenu} setShowMenu={setShowMenu} />
       <div className={styles.left_section}>
