@@ -6,6 +6,7 @@ import solana from '../../public/home/Solana.png'
 import replit from '../../public/home/Replit.png'
 import filecoin from '../../public/home/Filecoin.png'
 import taskade from '../../public/home/taskade.png'
+import echo3d from '../../public/home/echo3d.png'
 import Carousel from '../elements/Carousel'
 
 const Sponsers = ({ showMenu }) => {
@@ -22,10 +23,15 @@ const Sponsers = ({ showMenu }) => {
   const tierThreeSponsors = [
     { imgSrc: taskade, imghref: 'https://www.taskade.com/' },
   ]
+
+  const tierFourSponsors = [
+    { imgSrc: echo3d, imghref: 'https://www.echo3d.co/' },
+  ]
   const [carouselSizes, setCarouselSizes] = useState({
     tierOneSize: tierOneSponsors.length,
     tierTwoSize: tierTwoSponsors.length,
     tierThreeSize: tierThreeSponsors.length,
+    tierFourSize: tierFourSponsors.length,
   })
 
   useEffect(() => {
@@ -35,6 +41,7 @@ const Sponsers = ({ showMenu }) => {
         newSizes.tierOneSize = Math.min(newSizes.tierOneSize, 1)
         newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize, 1)
         newSizes.tierThreeSize = Math.min(newSizes.tierThreeSize, 1)
+        newSizes.tierFourSize = Math.min(newSizes.tierFourSize, 1)
         return newSizes
       })
     } else if (screen.width < 1200) {
@@ -43,6 +50,7 @@ const Sponsers = ({ showMenu }) => {
         newSizes.tierOneSize = Math.min(newSizes.tierOneSize, 2)
         newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize, 2)
         newSizes.tierThreeSize = Math.min(newSizes.tierThreeSize, 2)
+        newSizes.tierFourSize = Math.min(newSizes.tierFourSize, 2)
         return newSizes
       })
     } else {
@@ -51,6 +59,7 @@ const Sponsers = ({ showMenu }) => {
         newSizes.tierOneSize = Math.min(newSizes.tierOneSize, 3)
         newSizes.tierTwoSize = Math.min(newSizes.tierTwoSize, 3)
         newSizes.tierThreeSize = Math.min(newSizes.tierThreeSize, 3)
+        newSizes.tierFourSize = Math.min(newSizes.tierFourSize, 3)
         return newSizes
       })
     }
@@ -112,6 +121,17 @@ const Sponsers = ({ showMenu }) => {
         <Carousel
           cardList={tierThreeSponsors}
           carouselSize={carouselSizes.tierThreeSize}
+        />
+      </div>
+
+      <div
+        className={`${
+          showMenu ? 'opacity-0 duration-500' : ''
+        } flex items-center`}
+      >
+        <Carousel
+          cardList={tierFourSponsors}
+          carouselSize={carouselSizes.tierFourSize}
         />
       </div>
     </div>
