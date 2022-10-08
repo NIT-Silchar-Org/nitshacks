@@ -68,9 +68,9 @@ function Event() {
               <br />
             </div>
             <div className={styles.btnwrapper}>
-              {/* <a target="_blank" href='https://forms.gle/vS1scytr5gqh61Up7'> */}
-              <button disabled className={styles.registerbtn}></button>
-              {/* </a> */}
+              <a target="_blank" href="https://forms.gle/vS1scytr5gqh61Up7">
+                <button className={styles.registerbtn}></button>
+              </a>
             </div>
           </div>
         </div>
