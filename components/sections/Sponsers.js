@@ -7,6 +7,7 @@ import replit from '../../public/home/Replit.png'
 import filecoin from '../../public/home/Filecoin.png'
 import taskade from '../../public/home/taskade.png'
 import echo3d from '../../public/home/echo3d.png'
+import campuskarma from '../../public/home/CampusKarma.png'
 import Carousel from '../elements/Carousel'
 
 const Sponsers = ({ showMenu }) => {
@@ -26,6 +27,7 @@ const Sponsers = ({ showMenu }) => {
 
   const tierFourSponsors = [
     { imgSrc: echo3d, imghref: 'https://www.echo3d.co/' },
+    { imgSrc: campuskarma, imghref: 'https://www.campuskarma.in/' },
   ]
   const [carouselSizes, setCarouselSizes] = useState({
     tierOneSize: tierOneSponsors.length,
