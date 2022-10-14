@@ -29,6 +29,9 @@ const Hamburger_menu = ({showMenu,setShowMenu}) => {
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#events" className="hamburger_links font-light">
           Events
         </a>
+        <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/team" className="hamburger_links font-light">
+          Team
+        </a>
         <a onClick={() => setShowMenu((prevShowMenu) => !prevShowMenu)} href="/#sponsors" className="hamburger_links font-light">
           Sponsors
         </a>
