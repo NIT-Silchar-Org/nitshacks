@@ -8,6 +8,7 @@ import filecoin from '../../public/home/Filecoin.png'
 import taskade from '../../public/home/taskade.png'
 import echo3d from '../../public/home/echo3d.png'
 import campuskarma from '../../public/home/CampusKarma.png'
+import interviewcake from '../../public/home/interviewcake.png'
 import Carousel from '../elements/Carousel'
 
 const Sponsers = ({ showMenu }) => {
@@ -23,6 +24,7 @@ const Sponsers = ({ showMenu }) => {
   ]
   const tierThreeSponsors = [
     { imgSrc: taskade, imghref: 'https://www.taskade.com/' },
+    { imgSrc: interviewcake, imghref: 'https://www.interviewcake.com/' },
   ]
 
   const tierFourSponsors = [
