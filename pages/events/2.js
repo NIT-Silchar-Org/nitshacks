@@ -66,6 +66,15 @@ function Event() {
                 </li>
               </ul>
               <br />
+              <div>
+                For problem statement{' '}
+                <a
+                  href="https://drive.google.com/file/d/1rTXtX6vuhFaOMup_bauKALcwUEnPawCp/view?fbclid=IwAR0j8iUtwhMQqDN6odd9wPeH453VcEz8lhlP-W0Q_I05N-dSiDz_r6jcN20"
+                  target="_blank"
+                >
+                  <u>Click here</u>
+                </a>
+              </div>
             </div>
             <div className={styles.btnwrapper}>
               <a target="_blank" href="https://forms.gle/vS1scytr5gqh61Up7">
